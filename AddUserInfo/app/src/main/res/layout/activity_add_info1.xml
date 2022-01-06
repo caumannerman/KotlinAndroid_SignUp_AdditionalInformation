@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddInfo1Activity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:text="추가 정보를 입력하세요.  1/3"
+            android:textColor="#0C6559"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            app:layout_constraintHorizontal_bias="0.339"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/nameLabel"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="36dp"
+            android:text="성명"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/titleText" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="36dp"
+            android:background="#bbbbbb"
+            android:gravity="center_vertical"
+            android:text="     양준식"
+            android:textColor="#000000"
+            app:layout_constraintLeft_toRightOf="@id/nameLabel"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/titleText" />
+
+        <TextView
+            android:id="@+id/engNameLabel"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:text="영문명"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/nameLabel" />
+
+        <EditText
+            android:id="@+id/engLastName"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="48dp"
+            android:background="@android:color/transparent"
+            android:hint="Last Name"
+
+            app:layout_constraintHorizontal_bias="0.199"
+            app:layout_constraintLeft_toRightOf="@id/engNameLabel"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/nameLabel" />
+
+        <EditText
+            android:id="@+id/engFirstName"
+            android:layout_width="140dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="50dp"
+            android:background="@android:color/transparent"
+            android:hint="First Name"
+            app:layout_constraintHorizontal_bias="0.272"
+            app:layout_constraintLeft_toRightOf="@id/engLastName"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/nameLabel" />
+
+        <TextView
+            android:id="@+id/birthLabel"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:text="생년월일"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/engNameLabel" />
+
+        <TextView
+            android:id="@+id/bitrhYear"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="50dp"
+            android:background="#bbbbbb"
+            android:gravity="center_vertical"
+            android:text="   1996"
+            android:textColor="#000000"
+            app:layout_constraintHorizontal_bias="0.16"
+            app:layout_constraintLeft_toRightOf="@id/birthLabel"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/engNameLabel" />
+
+        <TextView
+            android:id="@+id/birthMonth"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="50dp"
+            android:background="#bbbbbb"
+            android:gravity="center_vertical"
+            android:text="   04"
+            android:textColor="#000000"
+
+            app:layout_constraintHorizontal_bias="0.051"
+            app:layout_constraintLeft_toRightOf="@id/bitrhYear"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/engNameLabel" />
+
+        <TextView
+            android:id="@+id/birthDay"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="50dp"
+            android:background="#bbbbbb"
+            android:gravity="center_vertical"
+            android:text="   20"
+            android:textColor="#000000"
+            app:layout_constraintHorizontal_bias="0.136"
+            app:layout_constraintLeft_toRightOf="@id/birthMonth"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/engNameLabel" />
+
+        <TextView
+            android:id="@+id/malefemale"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:text="성별"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/birthLabel" />
+
+
+        <RadioGroup
+            android:id="@+id/genderRadioGroup"
+            android:layout_width="158dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal"
+
+            app:layout_constraintBottom_toTopOf="@id/nationSpinner"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/malefemale"
+            app:layout_constraintTop_toBottomOf="@id/birthLabel"
+            app:layout_constraintVertical_bias="0.0">
+
+            <RadioButton
+                android:id="@+id/maleBtn"
+                android:layout_width="72dp"
+                android:layout_height="match_parent"
+                android:text="남" />
+
+            <RadioButton
+                android:id="@+id/femaleBtn"
+                android:layout_width="81dp"
+                android:layout_height="20dp"
+                android:text="여" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/nation"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:text="국적"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/malefemale" />
+
+        <Spinner
+            android:id="@+id/nationSpinner"
+            android:layout_width="259dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="16dp"
+            app:layout_constraintLeft_toRightOf="@id/nation"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/malefemale" />
+
+        <TextView
+            android:id="@+id/domestic"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:text="국내 거주 여부"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/nation" />
+
+        <RadioGroup
+            android:id="@+id/domesticRadioGroup"
+            android:layout_width="158dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="72dp"
+            android:orientation="horizontal"
+            app:layout_constraintHorizontal_bias="0.574"
+            app:layout_constraintLeft_toRightOf="@id/domestic"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/nation">
+
+            <RadioButton
+                android:id="@+id/domesticBtn"
+                android:layout_width="72dp"
+                android:layout_height="match_parent"
+                android:text="거주" />
+
+            <RadioButton
+                android:id="@+id/foreignBtn"
+                android:layout_width="81dp"
+                android:layout_height="20dp"
+                android:text="비거주" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/addressLabel"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:text="자택 주소"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/domestic" />
+
+        <TextView
+            android:id="@+id/ZipCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="11111"
+            app:layout_constraintHorizontal_bias="0.153"
+            app:layout_constraintLeft_toRightOf="@id/addressLabel"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/domesticRadioGroup" />
+
+        <TextView
+            android:id="@+id/addressText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="경기도 안양시 동안구 ....."
+            app:layout_constraintHorizontal_bias="0.241"
+            app:layout_constraintLeft_toRightOf="@id/ZipCode"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/domesticRadioGroup" />
+
+
+        <EditText
+            android:id="@+id/addrDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:hint="상세주소를 입력해주세요."
+            android:inputType="textPersonName"
+
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toRightOf="@id/addressLabel"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/addressLabel" />
+
+        <Button
+            android:id="@+id/addrSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="20dp"
+            android:text="주소 검색"
+            app:layout_constraintHorizontal_bias="0.2"
+            app:layout_constraintLeft_toRightOf="@id/addressText"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/addrDetail"
+            app:layout_constraintTop_toBottomOf="@+id/addressLabel" />
+
+        <Button
+            android:id="@+id/nextBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="50dp"
+            android:gravity="center_vertical"
+            android:text="다음"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/detailAddressWarning" />
+
+        <TextView
+            android:id="@+id/engNameWarning"
+            android:layout_width="223dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="164dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            android:textColor="#FF0000"
+            android:textStyle="bold|italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/engNameLabel" />
+
+        <TextView
+            android:id="@+id/genderWarning"
+            android:layout_width="176dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="152dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            android:textColor="#FF0000"
+            android:textStyle="bold|italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/malefemale" />
+
+        <TextView
+            android:id="@+id/nationWarning"
+            android:layout_width="259dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="128dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            android:textColor="#FF0000"
+            android:textStyle="bold|italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nation" />
+
+        <TextView
+            android:id="@+id/domesticWarning"
+            android:layout_width="153dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="152dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            android:textColor="#FF0000"
+            android:textStyle="bold|italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/domestic" />
+
+        <TextView
+            android:id="@+id/detailAddressWarning"
+            android:layout_width="192dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            android:textColor="#FF0000"
+            android:textStyle="bold|italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addrDetail" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

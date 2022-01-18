@@ -1,3 +1,32 @@
 <resources>
     <string name="app_name">AddUserInfo</string>
+    <string name="additional_info_title">Additional Information</string>
+    <string name="add_info_label_name">성명</string>
+    <string name="add_info_eng_name">영문명</string>
+    <string name="add_info_label_birth">생일</string>
+    <string name="add_info_gender">성별</string>
+    <string name="add_info_nation">국적</string>
+    <string name="add_info_domestic">국내거주여부</string>
+    <string name="add_info_address_home">주소</string>
+    <string name="add_info_job">직업</string>
+    <string name="add_info_workplace">직장명</string>
+    <string name="add_info_department">부서명</string>
+    <string name="add_info_rank">직위</string>
+    <string name="add_info_address_work">직장주소</string>
+    <string name="add_info_work_phone">직장전화번호</string>
+    <string name="add_info_money_from">자금 출처</string>
+    <string name="add_info_object">거래 목적</string>
+    <string name="add_info_deputy">대리인 여부</string>
+    <string name="add_info_bank">은행</string>
+    <string name="add_info_account">계좌번호</string>
+    <string name="add_info_valid_code">인증번호</string>
+    <string name=""></string>
+    <string name=""></string>
+    <string name=""></string>
+    <string name=""></string>
+    <string name=""></string>
+    <string name=""></string>
+    <string name=""></string>
+    <string name=""></string>
+
 </resources>
